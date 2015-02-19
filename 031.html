@@ -11,6 +11,35 @@ var w=window.innerWidth||document.documentElement.clientWidth||document.body.cli
 var h=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;
 x=document.getElementById("demo");
 x.innerHTML="浏览器的内部窗口宽度："+w+",高度："+h+"。"
+document.write("可用宽度："+screen.availWidth);
+document.write("可用高度："+screen.availHeight);
+document.write(location.hostname+"<br />");
+document.write(location.pathname+"<br />");
+document.write(location.port+"<br />");
+document.write(location.protocol+"<br />");
+document.write(location.href);
+
 </script>
+<script>
+function newDoc()
+{
+	window.location.assign("http://www.w3school.com.cn")
+}
+</script>
+<input type="button" Value="加载新文档" onclick="newDoc()">
+
+<script>
+function goBack()
+{
+	window.history.back()
+}
+function goForward()
+{
+	window.history.forward()
+}
+</script>
+<input type="button" value="Back" onclick="goBack()">
+<input type="button" value="Forward" onclick="goForward()">
+
 </body>
 </html>

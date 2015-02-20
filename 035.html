@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+function startTime()
+{
+	var today=new Date()
+	var h=today.getHours()
+	var m=today.getMinutes()
+	var s=today.getSeconds()
+	m=checkTime(m)
+	s=checkTime(s)
+	document.getElementById('txt').innerHTML=h+":"+m+":"+s
+	t=setTimeout('startTime()',500)
+
+}
+function checkTime(i)
+{
+	if(i<10)
+	{
+		i="0"+i
+	}
+	return i;
+}
+</script>
+</head>
+<body onload="startTime()" >
+<!--
+<script>
+function timeMsg()
+{
+	var t=setTimeout("alert('5秒!')",5000)
+}
+</script>
+<script>
+var c=0
+var t
+function timedCount()
+{
+	document.getElementById('txt').value=c
+	c=c+1
+	t=setTimeout("timeCount()",1000)
+}
+</script>
+-->
+<!--
+<form>
+<input type="button" value="显示定时的警告框" onClick="timeMsg()">
+</form>
+<p>请点击上面的按钮。警告框会在5秒后显示。</p>
+
+<form>
+<input type="button" value="开始计时！" onClick="timedCount()">
+<input type="text" id="txt">
+</form>
+<p>请点击上面的按钮，输入框会从0开始一直进行计时。</p>
+-->
+<dive id='txt'></div>
+</body>
+</html>

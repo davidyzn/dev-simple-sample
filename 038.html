@@ -43,8 +43,12 @@ li strong{
 }
 .center{text-align:center}
 .fancy td{
-	color:green;
+	color:#f60;
 	background: #666;
+}
+td.fancy{
+	color:#f60;
+	background:#666;
 }
 </style>
 
@@ -71,9 +75,14 @@ This heading will be center-aligned </h1>
 This paragraph will also be center-aligned.</p>
 </div>
 <div class="fancy">
+<table>
 <tr>ok</tr>
 <td>123</td>
 <td>456</td>
+</table>
 </div>
+<table>
+<td class="fancy">ok_test</td>
+</table>
 </body>
 </html>

@@ -1,0 +1,29 @@
+/*
+hr{color:sienna;}
+p{margin-left:20px;}
+body{background-image:url("images/back.jpg");}
+*/
+/*
+body{background-color:yellow}
+h1{background-color: #00ff00}
+h2{background-color:transparent;}
+p{background-color: rgb(255,0,255)}
+p.no2 {background-color:gray;padding:20px;}
+*/
+body{background-image: url(images/back.jpg);
+     background-repeat: no-repeat;
+     background-position:30% 30%;
+     background-attachment: fixed}
+p.flower{background-image:url(images/back.jpg);padding:20px;}
+a.radio{background-image:url(images/back.jpg);padding:20px;}
+p{text-indent: -5em;padding-left:5em;}
+div{width:500px;background-color: green;}
+p{text-indent: 10%;}
+
+div#outer{width:500px;}
+div#inner{text-indent: 10%;}
+p{width:200px;}
+
+a{text-decoration: none;}
+a:link a:visited {text-decoration:underline overline;}
+

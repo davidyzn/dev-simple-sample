@@ -26,25 +26,29 @@ li strong{
 #red{color:red;}
 #green{color:green;}
 
-#sidebar1 p{
+#sidebar p{
 	color:blue;
 	font-style:italic;
-	text-align:right;
+	text-align:left;
 	margin-top:0.5em;
 }
-#sidebar2 h2{
+#sidebar h2{
 	font-size:1em;
 	font-weight:normal;
 	font-style:italic;
 	margin:0;
 	line-height: 1.5;
-	text-align:right;
+	text-align:center;
 	color:yellow;
 }
-
+.center{text-align:center}
+.fancy td{
+	color:green;
+	background: #666;
+}
 </style>
 
-<body>
+<body bgcolor="#FFFFFF">
 <h1>这是标题 1</h1>
 <h2>这是标题 2</h2>
 <p>这是段落</p>
@@ -56,9 +60,20 @@ li strong{
 </ol>
 <p id="red">这个段落是红色。</p>
 <p id="green">这个段落是绿色。</p>
-<p id="sidebar1">这个段落是sidebar。</p>
+<div id="sidebar">
+<p>这是一个sidebar的段落</p>
 <h2 >这该段落是h2.</h2>
-
-
+</div>
+<div>
+<h1 class="center">
+This heading will be center-aligned </h1>
+<p class="center">
+This paragraph will also be center-aligned.</p>
+</div>
+<div class="fancy">
+<tr>ok</tr>
+<td>123</td>
+<td>456</td>
+</div>
 </body>
 </html>

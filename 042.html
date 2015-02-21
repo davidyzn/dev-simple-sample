@@ -8,9 +8,40 @@ a:visited {color:#00ff00;} /*已经被访问过的链接*/
 a:hover{color:#ff00ff;}  /*鼠标指针移动到的链接上*/
 a:active{color:#0000ff;} /*正在被点击的链接*/
 ul{list-style-type:square;}
-ul{list-style-image: url(images/logo.jpg);
+/*ul{list-style-image: url(images/logo.jpg);
    padding:200px;width:20px;height:20px;}
-
+*/
+table
+{
+	border-collapse: collapse;
+}
+table,td,th
+{
+	border:1px solid black;
+}
+table
+{
+	width:100%;
+}
+th
+{
+	height:50px;
+}
+td
+{
+	text-align: right;
+	height:50px;
+	vertical-align:bottom;
+}
+table,td,th
+{
+	border:1px solid green;
+}
+th
+{
+	background-color:green;
+	color:white;
+}
 </style>
 </head>
 <body>
@@ -21,6 +52,21 @@ ul{list-style-image: url(images/logo.jpg);
 <li> number1</li>
 <li> number2</li>
 </ul>
+
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+</tr>
+<tr>
+<td>Bill</td>
+<td>Gates</td>
+</tr>
+<tr>
+<td>Steven</td>
+<td>Jobs</td>
+</tr>
+</table>
 
 </body>
 </html>

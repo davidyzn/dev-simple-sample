@@ -10,7 +10,8 @@ h2{background-color:transparent;}
 p{background-color: rgb(255,0,255)}
 p.no2 {background-color:gray;padding:20px;}
 */
-body{background-image: url(images/back.jpg);
+body{font-size:100%;
+	 background-image: none;
      background-repeat: no-repeat;
      background-position:30% 30%;
      background-attachment: fixed}
@@ -22,8 +23,17 @@ p{text-indent: 10%;}
 
 div#outer{width:500px;}
 div#inner{text-indent: 10%;}
-p{width:200px;}
+p{width:400px;}
 
 a{text-decoration: none;}
 a:link a:visited {text-decoration:underline overline;}
 
+body{font-family: monospace}
+
+p.normal{font-weight:normal;}
+p.thick{font-weight:bold;}
+p.thicker{font-weight:900;}
+
+h1{font-size:3.75em;}
+h2{font-size:2.5em;}
+p{font-size:0.875em;}

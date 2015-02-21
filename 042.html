@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+a:link {color:#ff0000;} /*未被访问的链接*/
+a:visited {color:#00ff00;} /*已经被访问过的链接*/
+a:hover{color:#ff00ff;}  /*鼠标指针移动到的链接上*/
+a:active{color:#0000ff;} /*正在被点击的链接*/
+ul{list-style-type:square;}
+ul{list-style-image: url(images/logo.jpg);
+   padding:200px;width:20px;height:20px;}
+
+</style>
+</head>
+<body>
+<p><b><a href="041.html" target="_blank">这是一个链接</a></b></p>
+<p><b>注释：</b>为了使定义生效，a:hover 必须位于 a:link和a:visited 之后</p>
+<p><b>注释：</b>为了使定义生效，a:active 必须位于 a:hover之后！</p>
+<ul> 
+<li> number1</li>
+<li> number2</li>
+</ul>
+
+</body>
+</html>

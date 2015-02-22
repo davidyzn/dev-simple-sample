@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+img
+{
+	position: absolute;
+	top:0px;
+}
+img.normal
+{
+	position:absolute;
+	top:50%;
+}
+div
+{
+	background-color:#00fffff;
+	width:150px;
+	height:150px;
+	/*overflow: scroll;*/
+	/*overflow:hidden;*/
+	overflow: auto;
+
+}
+img.cut{
+	position: absolute;
+	clip:rect(0px 50px 200px 0px);
+}
+img.x
+{
+	position: absolute;
+	left:0px;
+	top:0px;
+	z-index: 1
+}
+</style>
+</head>
+<body>
+<h1> This is a Heading.</h1>
+<img class="normal" src="images/logo.jpg" />
+<p>一些文本一些文本。一些文本一些文本。一些文本一些文本。</p>
+<p>如果元素中对内容超出了给定的宽度和高度属性，overflow属性可以确定是否显示滚动条等行为。</p>
+<div>
+这个属性定义溢出元素内容区的内容如何处理，如果值为scroll，不论是否需要，用户代理都会提供一种滚动机制。因此，有可能即使元素框中可以放下所有内容也会出现滚动条。默认值时visible。
+</div>
+<p>clip 属性剪切了一幅图像</p>
+<p><img class="cut" border="0" src="images/back.jpg" width="120" height="151"></p>
+
+<h1>这是一个标题</h1>
+<img class="x" src="images/back.jpg" />
+<p>默认的z－index是0.z-index -1拥有更低的优先级</p>
+
+</body>
+</html>

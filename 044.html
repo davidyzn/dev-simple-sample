@@ -2,11 +2,11 @@
 <head>
 <meta charset="UTF-8">
 <style type="text/css">
-img
+/*img
 {
 	position: absolute;
 	top:0px;
-}
+}*/
 img.normal
 {
 	position:absolute;
@@ -33,6 +33,48 @@ img.x
 	top:0px;
 	z-index: 1
 }
+img.float
+{
+	float:right;
+}
+span
+{
+	float:left;
+	width:0.7em;
+	font-size:400%;
+}
+span
+{
+	float:left;
+	width:0.7em;
+	font-size:400%;
+	font-family: algerian,courier;
+	line-height: 80%;
+}
+ul
+{
+	float:left;
+	width:100%;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+a
+{
+	float:left;
+	width:7em;
+	text-decoration: none;
+	color:white;
+	background-color:purple;
+	padding:0.2em 0.6em;
+	border-right:1px solid white;
+}
+a:hover{
+	background-color: #ff3300
+}
+li{
+	display: inline;
+}
 </style>
 </head>
 <body>
@@ -43,12 +85,36 @@ img.x
 <div>
 这个属性定义溢出元素内容区的内容如何处理，如果值为scroll，不论是否需要，用户代理都会提供一种滚动机制。因此，有可能即使元素框中可以放下所有内容也会出现滚动条。默认值时visible。
 </div>
-<p>clip 属性剪切了一幅图像</p>
+<!--<p>clip 属性剪切了一幅图像</p>
 <p><img class="cut" border="0" src="images/back.jpg" width="120" height="151"></p>
 
 <h1>这是一个标题</h1>
 <img class="x" src="images/back.jpg" />
 <p>默认的z－index是0.z-index -1拥有更低的优先级</p>
-
+-->
+<p>中下面的段落中，我们添加了一个样式为<b>float:right</b>的图像。结果是这个图像会浮动到段落的右侧。</p>
+<p>
+<img class="float" src="images/back.jpg" />
+<span>T</span>his is some text.
+This is some text. This is some text.This is some text.
+This is some text. This is some text.This is some text.
+This is some text. This is some text.This is some text.
+This is some text. This is some text.This is some text.
+This is some text. This is some text.This is some text.
+This is some text. This is some text.This is some text.
+This is some text. This is some text.This is some text.
+This is some text. This is some text.This is some text.
+This is some text. This is some text.This is some text.
+This is some text. This is some text.This is some text.
+This is some text. This is some text.This is some text.
+This is some text. This is some text.This is some text.
+</p>
+<hr />
+<ul>
+<li><a href="#">Link one</a></li>
+<li><a href="#">Link two</a></li>
+<li><a href="#">link three</a></li>
+<li><a href="#">link four</a></li>
+</ul>
 </body>
 </html>

@@ -6,16 +6,15 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	$("button").click(function(){
-		$("p").hide(1000,function(){
-			alert("The paragraph is now hidden");
-		});
+
+		$("#p1").css("color","red").slideUp(2000).slideDown(2000);
+	
 	});
 });
 </script>
 </head>
 <body>
-<button type="button">隐藏</button>
-<p>这是一个段落</p>
-<p>这是另一个段落。</p>
+<p id="p1">jQuery 乐趣十足！</p>
+<button>点击这里</button>
 </body>
 </html>
